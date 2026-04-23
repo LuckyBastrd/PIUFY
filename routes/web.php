@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
 
-Route::get('home', [PiutangController::class, 'dashboard']);
+// Route::get('home', [PiutangController::class, 'dashboard']);
 Route::resource('piutang', PiutangController::class);
 Route::get('laporan', [PiutangController::class, 'laporan']);
 Route::get('/laporan-piutang-data', [PiutangController::class, 'data']);
@@ -77,6 +77,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
     // DASHBOARD / HALAMAN UTAMA
+    // Route::get('/', [PiutangController::class, 'index'])->name('piutang.index');
+    Route::get('/home', [PiutangController::class, 'dashboard'])->name('home');
+
     Route::get('/', [PiutangController::class, 'index'])->name('piutang.index');
 
     // PROFILE

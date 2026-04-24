@@ -64,6 +64,19 @@ return [
             ]) : [],
         ],
 
+        // 'mysql' => [
+        //     'driver' => 'mysql',
+        //     'host' => 'interchange.proxy.rlwy.net',
+        //     'port' => '18576',
+        //     'database' => 'railway',
+        //     'username' => 'root',
+        //     'password' => 'lunhDMDVkHdQcBDWYySWjgrmMVbWTXFK',
+        //     'charset' => 'utf8mb4',
+        //     'collation' => 'utf8mb4_unicode_ci',
+        //     'prefix' => '',
+        //     'strict' => true,
+        // ],
+
         'mariadb' => [
             'driver' => 'mariadb',
             'url' => env('DB_URL'),

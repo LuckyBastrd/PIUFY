@@ -7,7 +7,9 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use App\Http\Controllers\PiutangController;
 use App\Http\Controllers\AuthController;
 
-
+Route::get('/', function () {
+    return 'APP HIDUP';
+});
 
 /*
 |--------------------------------------------------------------------------
